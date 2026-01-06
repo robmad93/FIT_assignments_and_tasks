@@ -1,0 +1,4 @@
+Type,Attack Range,Health Range,Defense Range,Speed Range
+Brute,38 - 45,145 - 165,28 - 35,8 - 15
+Agile,52 - 60,78 - 90,14 - 18,42 - 50
+Ranged,48 - 55,95 - 110,18 - 25,28 - 35

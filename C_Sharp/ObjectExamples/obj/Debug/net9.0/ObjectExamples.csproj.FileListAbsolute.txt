@@ -1,0 +1,14 @@
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\bin\Debug\net9.0\ObjectExamples.exe
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\bin\Debug\net9.0\ObjectExamples.deps.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\bin\Debug\net9.0\ObjectExamples.runtimeconfig.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\bin\Debug\net9.0\ObjectExamples.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\bin\Debug\net9.0\ObjectExamples.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\ObjectExamples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\ObjectExamples.AssemblyInfoInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\ObjectExamples.AssemblyInfo.cs
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\ObjectExamples.csproj.CoreCompileInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\ObjectExamples.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\refint\ObjectExamples.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\ObjectExamples.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\ObjectExamples.genruntimeconfig.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ObjectExamples\obj\Debug\net9.0\ref\ObjectExamples.dll

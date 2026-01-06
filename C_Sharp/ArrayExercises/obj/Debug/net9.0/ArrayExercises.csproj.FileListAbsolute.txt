@@ -1,0 +1,14 @@
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\bin\Debug\net9.0\ArrayExercises.exe
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\bin\Debug\net9.0\ArrayExercises.deps.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\bin\Debug\net9.0\ArrayExercises.runtimeconfig.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\bin\Debug\net9.0\ArrayExercises.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\bin\Debug\net9.0\ArrayExercises.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\ArrayExercises.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\ArrayExercises.AssemblyInfoInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\ArrayExercises.AssemblyInfo.cs
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\ArrayExercises.csproj.CoreCompileInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\ArrayExercises.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\refint\ArrayExercises.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\ArrayExercises.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\ArrayExercises.genruntimeconfig.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ArrayExercises\obj\Debug\net9.0\ref\ArrayExercises.dll

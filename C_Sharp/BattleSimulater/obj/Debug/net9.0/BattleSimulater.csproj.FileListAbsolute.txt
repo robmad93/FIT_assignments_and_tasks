@@ -1,0 +1,14 @@
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\bin\Debug\net9.0\BattleSimulater.exe
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\bin\Debug\net9.0\BattleSimulater.deps.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\bin\Debug\net9.0\BattleSimulater.runtimeconfig.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\bin\Debug\net9.0\BattleSimulater.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\bin\Debug\net9.0\BattleSimulater.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\BattleSimulater.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\BattleSimulater.AssemblyInfoInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\BattleSimulater.AssemblyInfo.cs
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\BattleSimulater.csproj.CoreCompileInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\BattleSimulater.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\refint\BattleSimulater.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\BattleSimulater.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\BattleSimulater.genruntimeconfig.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\BattleSimulater\obj\Debug\net9.0\ref\BattleSimulater.dll

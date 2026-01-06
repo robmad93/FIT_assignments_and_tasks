@@ -1,0 +1,17 @@
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\bin\Debug\net9.0\FileIOExample.exe
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\bin\Debug\net9.0\FileIOExample.deps.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\bin\Debug\net9.0\FileIOExample.runtimeconfig.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\bin\Debug\net9.0\FileIOExample.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\bin\Debug\net9.0\FileIOExample.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\FileIOExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\FileIOExample.AssemblyInfoInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\FileIOExample.AssemblyInfo.cs
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\FileIOExample.csproj.CoreCompileInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\FileIOExample.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\refint\FileIOExample.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\FileIOExample.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\FileIOExample.genruntimeconfig.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\obj\Debug\net9.0\ref\FileIOExample.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\bin\Debug\net9.0\Resources\jokes.txt
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\bin\Debug\net9.0\Resources\compliments.txt
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\FileIOExample\bin\Debug\net9.0\Resources\random_facts.txt

@@ -1,0 +1,14 @@
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\bin\Debug\net9.0\ConditionalPractice.exe
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\bin\Debug\net9.0\ConditionalPractice.deps.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\bin\Debug\net9.0\ConditionalPractice.runtimeconfig.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\bin\Debug\net9.0\ConditionalPractice.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\bin\Debug\net9.0\ConditionalPractice.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\ConditionalPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\ConditionalPractice.AssemblyInfoInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\ConditionalPractice.AssemblyInfo.cs
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\ConditionalPractice.csproj.CoreCompileInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\ConditionalPractice.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\refint\ConditionalPractice.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\ConditionalPractice.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\ConditionalPractice.genruntimeconfig.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\ConditionalPractice\obj\Debug\net9.0\ref\ConditionalPractice.dll

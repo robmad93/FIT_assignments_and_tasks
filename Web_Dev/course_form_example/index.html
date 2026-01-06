@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <canvas id="myCanvas" width="300" height="200">
+        Your browser does not support the canvas tag. -->
+    <!-- </canvas>
+    <video width="420" height="315" controls>
+    <source src="./resources/movie.mp4" type="video/mp4">
+</video> -->
+    
+    <center>
+        <h1>Please complete this form</h1>
+        <form action="https://httpbin.org/post" method="post" target="_blank">
+        <label>Enter your name:</label><br>
+        <input type="text" name="applicantName" required><br>
+        <label>Email address:</label><br>
+        <input type="email" name="applicantEmail" required><br><br>
+        <label>Select course:</label><br>
+        <select name="selectedCourse" required>
+            <option value="">Select a course</option>
+            <option value="biology">Biology</option>
+            <option value="history">History</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="music">Music</option>
+            <option value="maths">Maths</option>
+        </select>
+        <br><br>
+        <fieldset>
+        <center><legend>Select your preferred level of study:</legend><br></center>
+        <input type="radio" name="level" value="level 1" checked>
+        <label>Level 1</label><br>
+        <input type="radio" name="level" value="level 2">
+        <label>Level 2</label><br>
+        <input type="radio" name="level" value="level 3">
+        <label>Level 3</label><br>
+        </fieldset>
+        <button type="submit">Apply Now</button>
+    </form>
+    </center>
+    <script>
+        // let c = document.getElementById("myCanvas");
+        // let ctx = c.getContext("2d");
+        // ctx.fillStyle = "red";
+        // ctx.fillRect(20, 20, 75, 50);
+        // //Turn transparency on
+        // ctx.globalAlpha = 0.2;
+        // ctx.fillStyle = "blue";
+        // ctx.fillRect(50, 50, 75, 50);
+        // ctx.fillStyle = "green";
+        // ctx.fillRect(80, 80, 75, 50);
+        // ctx.beginPath();
+        // ctx.moveTo(10, 10);
+        // ctx.lineTo(150, 100);
+        // ctx.stroke();
+    </script>
+</body>
+</html>

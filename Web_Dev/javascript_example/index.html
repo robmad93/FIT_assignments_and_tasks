@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: bisque;">
+    <center>
+    <h1>Test message on submit</h1>
+    <form class="form" action="https://httpbin.org/post" method="post" target="_blank" onsubmit="return formMessage()">
+        <label>Enter your first name:</label><br>
+        <input type="text" name="firstName" required><br>
+        <label>Enter your second name: </label><br>
+        <input type="text" name="secondName" required><br>
+        <label>Enter your age:</label><br>
+        <input type="number" name="personAge" required><br>
+        <label>Enter your email:</label><br>
+        <input type="email" name="personEmail" required><br>
+        <button type="submit">Submit</button>
+    </form>
+    </center>
+    <center>
+        <h1>Calculate two numbers</h1>
+        <form class="form" action="https://httpbin.org/post" method="post" target="_blank">
+            <label>Enter a number:</label><br>
+            <input type="number" name="firstNumber" required><br>
+            <label>Choose an operator:</label><br>
+            <button id="add" onclick="calculateTwoNumbers('add'); return false;">Add</button><button id="subtract" onclick="calculateTwoNumbers('subtract'); return false;">Subtract</button><button id="multiply" onclick="calculateTwoNumbers('multiply'); return false;">Multiply</button><button id="divide" onclick="calculateTwoNumbers('divide'); return false;">Divide</button><br>
+            <label>Enter another number:</label><br>
+            <input type="number" name="secondNumber" required><br>
+            <div id="twonumberoutput">
+            </div>
+        </form>
+    </center>
+    <center>
+        <h1>Distribution of dice rolls</h1>
+        <form class="form" action="https://httpbin.org/post" method="post" target="_blank">
+            <label>Enter number of rolls:</label><br>
+            <input type="number" name="numberOfRolls" required><br>
+            <button id="generate" onclick="diceRollDistributionGenerator('generate'); return false;">Generate Dice Rolls</button><br>
+            <div id="dicerolloutcomes"></div>
+        </form>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>

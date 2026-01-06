@@ -1,0 +1,16 @@
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\bin\Debug\net9.0\Fatal Encounter.exe
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\bin\Debug\net9.0\Fatal Encounter.deps.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\bin\Debug\net9.0\Fatal Encounter.runtimeconfig.json
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\bin\Debug\net9.0\Fatal Encounter.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\bin\Debug\net9.0\Fatal Encounter.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\Fatal Encounter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\Fatal Encounter.AssemblyInfoInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\Fatal Encounter.AssemblyInfo.cs
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\Fatal Encounter.csproj.CoreCompileInputs.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\Fatal Encounter.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\refint\Fatal Encounter.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\Fatal Encounter.pdb
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\Fatal Encounter.genruntimeconfig.cache
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\obj\Debug\net9.0\ref\Fatal Encounter.dll
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\bin\Debug\net9.0\Resources\Warrior_roster.csv
+C:\Users\RobertMadigan(Tallag\OneDrive - Dublin & Dun Laoghaire Education Training Board\Development\C_Sharp\Fatal Encounter\bin\Debug\net9.0\Resources\Warrior_stat_ranges.csv
