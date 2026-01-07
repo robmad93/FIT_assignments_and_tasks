@@ -32,12 +32,13 @@ INNER JOIN Departments
 ON Employees.Department_No = Departments.Department_No
 GROUP BY Employees.Department_No, Departments.Department_Name
 ORDER BY Employee_Count DESC
-LIMIT 1;</sql><sql name="Request 11">SELECT d.Department_No, d.Department_Name
+LIMIT 1;</sql><sql name="Request 11*">SELECT d.Department_No, d.Department_Name
 FROM Departments d
 JOIN Employees e
 ON d.Department_No = e.Department_No
 GROUP BY d.Department_No, d.Department_Name
-HAVING SUM(CASE WHEN e.Job_ID = 'IT_PROG' THEN 1 ELSE 0 END) = 0;
+HAVING SUM(CASE WHEN e.Job_ID = 'IT_PROG' THEN 1 ELSE 0 END) = 0;
+
 </sql><sql name="Request 12">INSERT INTO Jobs
 (Job_ID, Job_Title, Min_Salary, Max_Salary)
 VALUES (&quot;IT_ANAL&quot;, &quot;System Analyst&quot;, &quot;10000&quot;, &quot;15000&quot;)
@@ -77,4 +78,4 @@ ON Manager_Details
 TO PUBLIC;</sql><sql name="Request 20">CREATE INDEX LOC_POSTAL_CODE
 ON Locations (Postal_Code);
 
-PRAGMA index_info('LOC_POSTAL_CODE');</sql><current_tab id="9"/></tab_sql></sqlb_project>
+PRAGMA index_info('LOC_POSTAL_CODE');</sql><current_tab id="10"/></tab_sql></sqlb_project>
