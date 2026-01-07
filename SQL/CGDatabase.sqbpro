@@ -1,35 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="CGDatabase.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure pragmas browser query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2685"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Departments" custom_title="0" dock_id="1" table="4,11:mainDepartments"/><dock_state state="000000ff00000000fd0000000100000002000005bb00000390fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000000005bb0000012300ffffff000002690000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Countries" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="73"/><column index="2" value="199"/><column index="3" value="68"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Departments" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="98"/><column index="2" value="127"/><column index="3" value="78"/><column index="4" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Employees" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="84"/><column index="2" value="87"/><column index="3" value="87"/><column index="4" value="95"/><column index="5" value="95"/><column index="6" value="87"/><column index="7" value="87"/><column index="8" value="90"/><column index="9" value="127"/><column index="10" value="78"/><column index="11" value="98"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Job_History" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="84"/><column index="2" value="87"/><column index="3" value="87"/><column index="4" value="71"/><column index="5" value="98"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Jobs" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="87"/><column index="2" value="199"/><column index="3" value="71"/><column index="4" value="75"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Locations" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="76"/><column index="2" value="135"/><column index="3" value="111"/><column index="4" value="87"/><column index="5" value="142"/><column index="6" value="74"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Regions" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="67"/><column index="2" value="95"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Request 1">SELECT &quot;Last_Name&quot;, &quot;First_Name&quot;, &quot;Employee_No&quot;
-FROM Employees
-WHERE Job_ID = &quot;IT_PROG&quot; AND &quot;Hire_Date&quot; &lt;= &quot;1991-05-21&quot;
-ORDER BY &quot;Last_Name&quot; ASC;</sql><sql name="Request 2*">SELECT &quot;Department_No&quot;, &quot;Last_Name&quot;, &quot;Annual_Salary&quot;
-FROM Employees
-WHERE &quot;Hire_Date&quot; BETWEEN &quot;1987-09-16&quot; AND &quot;1996-05-12&quot;
-ORDER BY &quot;Department_No&quot;, &quot;Last_Name&quot;</sql><sql name="Request 3">SELECT *
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="CGDatabase.db" readonly="0" foreign_keys="0" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure pragmas browser query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2685"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Job_History" custom_title="0" dock_id="4" table="4,11:mainJob_History"/><table title="Locations" custom_title="0" dock_id="5" table="4,9:mainLocations"/><dock_state state="000000ff00000000fd0000000100000002000005bb00000390fc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000000005bb0000000000000000fc00000000000005bb0000012300fffffffa000000010100000002fb000000160064006f0063006b00420072006f00770073006500340100000000ffffffff0000012300fffffffb000000160064006f0063006b00420072006f00770073006500350100000000ffffffff0000011e00ffffff000005bb0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Countries" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="73"/><column index="2" value="199"/><column index="3" value="68"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Departments" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="98"/><column index="2" value="127"/><column index="3" value="78"/><column index="4" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Employees" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="84"/><column index="2" value="87"/><column index="3" value="87"/><column index="4" value="95"/><column index="5" value="95"/><column index="6" value="87"/><column index="7" value="87"/><column index="8" value="90"/><column index="9" value="127"/><column index="10" value="78"/><column index="11" value="98"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Job_History" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="84"/><column index="2" value="87"/><column index="3" value="87"/><column index="4" value="71"/><column index="5" value="98"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Jobs" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="87"/><column index="2" value="199"/><column index="3" value="71"/><column index="4" value="75"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Locations" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="76"/><column index="2" value="135"/><column index="3" value="111"/><column index="4" value="87"/><column index="5" value="142"/><column index="6" value="74"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Manager_Details" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="84"/><column index="2" value="72"/><column index="3" value="79"/><column index="4" value="87"/><column index="5" value="95"/><column index="6" value="87"/><column index="7" value="55"/><column index="8" value="90"/><column index="9" value="127"/><column index="10" value="78"/><column index="11" value="98"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Regions" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="67"/><column index="2" value="95"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Request 1">SELECT &quot;Last_Name&quot;, &quot;First_Name&quot;, &quot;Employee_No&quot;
+FROM Employees
+WHERE Job_ID = &quot;IT_PROG&quot; AND &quot;Hire_Date&quot; &lt;= &quot;1991-05-21&quot;
+ORDER BY &quot;Last_Name&quot; ASC;</sql><sql name="Request 2">SELECT &quot;Department_No&quot;, &quot;Last_Name&quot;, &quot;Annual_Salary&quot;
+FROM Employees
+WHERE &quot;Hire_Date&quot; BETWEEN &quot;1987-09-16&quot; AND &quot;1996-05-12&quot;
+ORDER BY &quot;Department_No&quot;, &quot;Last_Name&quot;</sql><sql name="Request 3">SELECT *
+FROM Jobs
+WHERE &quot;Max_Salary&quot; &gt; &quot;15000&quot;
+ORDER BY &quot;Max_Salary&quot; DESC;</sql><sql name="Request 4">SELECT &quot;Last_Name&quot;, &quot;First_Name&quot;, &quot;Job_ID&quot;, &quot;Commission_Percent&quot;
+FROM Employees
+WHERE &quot;Commission_Percent&quot; IS NOT NULL
+ORDER BY &quot;Last_Name&quot;, &quot;First_Name&quot;;</sql><sql name="Request 5">SELECT DISTINCT Jobs.Job_Title, Departments.Department_Name
+FROM Employees
+INNER JOIN Jobs
+ON Employees.Job_ID = Jobs.Job_ID
+INNER JOIN Departments
+ON Employees.Department_No = Departments.Department_No
+WHERE Employees.Department_No IN ( 50,  60)</sql><sql name="Request 6">SELECT Last_Name, Department_No, ROUND(Annual_Salary / 12.0, 2) AS Monthly_Salary
+FROM Employees
+WHERE Department_No IN (50, 90)
+ORDER BY Last_Name ASC;</sql><sql name="Request 7">SELECT CAST(ROUND(SUM(Annual_Salary) / 12) AS INTEGER) AS Total_Salaries_Monthly
+FROM Employees;</sql><sql name="Request 8">SELECT COUNT(Employee_No) AS Total_Number_Of_Employees
+FROM Employees;</sql><sql name="Request 9">SELECT Employees.Department_No, Departments.Department_Name, COUNT(*) AS Employee_Count
+FROM Employees
+INNER JOIN Departments
+ON Employees.Department_No = Departments.Department_No
+GROUP BY Employees.Department_No, Departments.Department_Name
+HAVING COUNT(*) &gt; 2;</sql><sql name="Request 10">SELECT Employees.Department_No, Departments.Department_Name, COUNT(*) AS Employee_Count
+FROM Employees
+INNER JOIN Departments
+ON Employees.Department_No = Departments.Department_No
+GROUP BY Employees.Department_No, Departments.Department_Name
+ORDER BY Employee_Count DESC
+LIMIT 1;</sql><sql name="Request 11">SELECT d.Department_No, d.Department_Name
+FROM Departments d
+JOIN Employees e
+ON d.Department_No = e.Department_No
+GROUP BY d.Department_No, d.Department_Name
+HAVING SUM(CASE WHEN e.Job_ID = 'IT_PROG' THEN 1 ELSE 0 END) = 0;
+</sql><sql name="Request 12">INSERT INTO Jobs
+(Job_ID, Job_Title, Min_Salary, Max_Salary)
+VALUES (&quot;IT_ANAL&quot;, &quot;System Analyst&quot;, &quot;10000&quot;, &quot;15000&quot;)
+</sql><sql name="Request 13">UPDATE Jobs
+SET Max_Salary = (Max_Salary + 1000)</sql><sql name="Request 14">SELECT *
 FROM Jobs
-WHERE &quot;Max_Salary&quot; &gt; &quot;15000&quot;
-ORDER BY &quot;Max_Salary&quot; DESC;</sql><sql name="Request 4*">SELECT &quot;Last_Name&quot;, &quot;First_Name&quot;, &quot;Job_ID&quot;, &quot;Commission_Percent&quot;
+ORDER BY Job_ID ASC;</sql><sql name="Request 15">PRAGMA foreign_keys = OFF;
+DELETE FROM Job_History 
+WHERE Job_History.Employee_No = 102;
+
+SELECT *
+FROM Job_History
+ORDER BY Employee_No;</sql><sql name="Request 16">SELECT e.Employee_No, e.Annual_Salary AS Old_Salary,
+CASE
+WHEN e.Department_No IN (10, 20) THEN '5%'
+WHEN e.Department_No IN (50, 80, 90, 110) THEN '10%'
+ELSE '0%'
+END AS Percentage_Raise,
+CASE
+WHEN e.Department_No IN (10, 20) THEN e.Annual_Salary * 1.05
+WHEN e.Department_No IN (50, 80, 90, 110) THEN e.Annual_Salary * 1.10
+ELSE e.Annual_Salary
+END AS New_Salary
+FROM Employees e
+ORDER BY e.Employee_No;
+</sql><sql name="Request 17">CREATE VIEW Manager_Details AS
+SELECT
+    *
 FROM Employees
-WHERE &quot;Commission_Percent&quot; IS NOT NULL
-ORDER BY &quot;Last_Name&quot;, &quot;First_Name&quot;;</sql><sql name="Request 5*">SELECT DISTINCT Jobs.Job_Title, Departments.Department_Name
-FROM Employees
-INNER JOIN Jobs
-ON Employees.Job_ID = Jobs.Job_ID
-INNER JOIN Departments
-ON Employees.Department_No = Departments.Department_No
-WHERE Employees.Department_No IN ( 50,  60)</sql><sql name="Request 6*">SELECT Last_Name, Department_No, ROUND(Annual_Salary / 12.0, 2) AS Monthly_Salary
-FROM Employees
-WHERE Department_No IN (50, 90)
-ORDER BY Last_Name ASC;</sql><sql name="Request 7*">SELECT CAST(ROUND(SUM(Annual_Salary) / 12) AS INTEGER) AS Total_Salaries_Monthly
-FROM Employees;</sql><sql name="Request 8*">SELECT COUNT(Employee_No) AS Total_Number_Of_Employees
-FROM Employees;</sql><sql name="Request 9*">SELECT Employees.Department_No, Departments.Department_Name, COUNT(*) AS Employee_Count
-FROM Employees
-INNER JOIN Departments
-ON Employees.Department_No = Departments.Department_No
-GROUP BY Employees.Department_No, Departments.Department_Name
-HAVING COUNT(*) &gt; 2;</sql><sql name="Request 10*">SELECT Employees.Department_No, Departments.Department_Name, COUNT(*) AS Employee_Count
-FROM Employees
-INNER JOIN Departments
-ON Employees.Department_No = Departments.Department_No
-GROUP BY Employees.Department_No, Departments.Department_Name
-ORDER BY Employee_Count DESC
-LIMIT 1;</sql><current_tab id="9"/></tab_sql></sqlb_project>
+WHERE Job_ID LIKE '%MGR';
+
+SELECT *
+FROM Manager_Details;</sql><sql name="Request 18">SELECT *
+FROM Manager_Details
+ORDER BY Employee_No ASC;</sql><sql name="Request 19">GRANT SELECT
+ON Manager_Details
+TO PUBLIC;</sql><sql name="Request 20">CREATE INDEX LOC_POSTAL_CODE
+ON Locations (Postal_Code);
+
+PRAGMA index_info('LOC_POSTAL_CODE');</sql><current_tab id="19"/></tab_sql></sqlb_project>
