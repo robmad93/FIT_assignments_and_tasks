@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="RMSQLPractice.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure pragmas browser query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1573"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="POItem" custom_title="0" dock_id="1" table="4,6:mainPOItem"/><dock_state state="000000ff00000000fd0000000100000002000005bb00000390fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000000005bb0000012300ffffff000002b30000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Material" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="271"/><column index="3" value="300"/><column index="4" value="55"/><column index="5" value="39"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="PO" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="72"/><column index="3" value="112"/><column index="4" value="65"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="POItem" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="39"/><column index="3" value="73"/><column index="4" value="56"/><column index="5" value="36"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Supplier" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="70"/><column index="3" value="87"/><column index="4" value="295"/><column index="5" value="223"/><column index="6" value="135"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO Material (name, description, price, stock) VALUES
+('Bamboo Polo Shirt', 'A breathable and eco-friendly polo shirt made from bamboo fibers', 34.99, 40),
+('Noise-Cancelling Headphones', 'Over-ear headphones with exceptional noise-cancelling and audio quality', 199.99, 80),
+('Tablet Protective Cover', 'A lightweight and durable cover designed for tablets of various sizes', 24.99, 150),
+('Reclaimed Wood Cheese Board', 'An elegant cheese board crafted from reclaimed wood', 44.99, 30),
+('Artisan Dark Chocolate Bar', 'A rich, handmade chocolate bar with 70% cacao content', 8.99, 100),
+('Smart Fitness Band', 'A sleek fitness band for tracking steps, calories, and heart rate', 89.99, 60),
+('Vegan Leather Cardholder', 'A slim and stylish cardholder made from vegan-friendly materials', 39.99, 90),
+('Insulated Travel Tumbler', 'A double-walled tumbler that keeps drinks hot or cold for hours', 19.99, 120),
+('Scented Beeswax Candle', 'A natural beeswax candle infused with calming lavender essential oils', 14.99, 60),
+('Magnetic Phone Mount', 'A compact and sturdy phone mount for use in your car or at home', 19.99, 200),
+('Portable Sound Bar', 'A lightweight and powerful sound bar perfect for on-the-go entertainment', 119.99, 40),
+('Organic Cotton Duvet Cover', 'A premium duvet cover made from 100% organic cotton', 99.99, 30),
+('Canvas Shopping Tote', 'A durable and washable canvas tote bag for everyday use', 12.99, 250),
+('Electric Milk Warmer', 'A versatile milk warmer with frothing capability for barista-style drinks', 24.99, 90),
+('Energy-Saving Light Bulb', 'A smart LED bulb that can be programmed and controlled via smartphone', 24.99, 100),
+('Collapsible Lunch Box', 'A BPA-free lunch box that folds flat for easy storage', 19.99, 70),
+('Rustic Wood Serving Platter', 'A charming serving platter made from reclaimed rustic wood', 49.99, 40),
+('Adjustable Yoga Straps', 'Durable straps ideal for yoga, stretching, and pilates', 14.99, 120),
+('Stoneware Coffee Cup', 'A beautifully handcrafted coffee cup made from durable stoneware', 19.99, 70),
+('Home Air Humidifier', 'A sleek and quiet humidifier that adds moisture to your living space', 99.99, 35),
+('Digital Meat Thermometer', 'A fast and accurate thermometer for perfect cooking results', 14.99, 110),
+('Trail Running Shoes', 'Lightweight and rugged running shoes for trails and uneven terrain', 139.99, 50),
+('Wireless On-Ear Headset', 'A comfortable and stylish wireless headset with great sound clarity', 79.99, 100),
+('Reusable Glass Storage Containers', 'A set of glass containers with bamboo lids for sustainable food storage', 29.99, 140);
+</sql><sql name="SQL 2">INSERT INTO Supplier (first_name, last_name, address, email, phone) VALUES
+('Liam', 'O’Brien', '22 Grafton St, Dublin 2, Ireland', 'liam.obrien@example.com', '+353 1 456 7890'),
+('Emma', 'Ward', '16 Henry St, Limerick, Ireland', 'emma.ward@example.com', '+353 61 234 5678'),
+('Noah', 'O’Donoghue', '4 Main St, Galway, Ireland', 'noah.odonoghue@example.com', '+353 91 456 7890'),
+('Aoife', 'Foley', '8 St. Patrick''s Rd, Cork, Ireland', 'aoife.foley@example.com', '+353 21 234 5678'),
+('Finn', 'Keane', '19 Dame St, Dublin 2, Ireland', 'finn.keane@example.com', '+353 1 567 8901'),
+('Sophie', 'Connolly', '10 High St, Kilkenny, Ireland', 'sophie.connolly@example.com', '+353 56 234 5678'),
+('Ryan', 'Mahony', '14 Abbey St, Ennis, Ireland', 'ryan.mahony@example.com', '+353 65 345 6789'),
+('Ciara', 'Kavanagh', '24 O''Connell St, Waterford, Ireland', 'ciara.kavanagh@example.com', '+353 51 234 5678'),
+('Darragh', 'O’Shea', '6 Main St, Clonmel, Ireland', 'darragh.oshea@example.com', '+353 52 456 7890'),
+('Megan', 'Power', '12 Shop St, Drogheda, Ireland', 'megan.power@example.com', '+353 41 345 6789'),
+('Owen', 'Fitzsimons', '28 High St, Cork, Ireland', 'owen.fitzsimons@example.com', '+353 21 678 9012'),
+('Hannah', 'Dunne', '42 Oliver Plunkett St, Cork, Ireland', 'hannah.dunne@example.com', '+353 21 890 1234'),
+('Ethan', 'Brennan', '18 Liffey St, Athlone, Ireland', 'ethan.brennan@example.com', '+353 90 234 5678'),
+('Molly', 'Casey', '9 Castle St, Tralee, Ireland', 'molly.casey@example.com', '+353 66 345 6789'),
+('Luke', 'O’Connell', '33 South Main St, Wexford, Ireland', 'luke.oconnell@example.com', '+353 53 567 8901'),
+('Grace', 'Gannon', '17 Main St, Dundalk, Ireland', 'grace.gannon@example.com', '+353 42 234 5678'),
+('Tom', 'Farrell', '7 Main St, Naas, Ireland', 'tom.farrell@example.com', '+353 45 678 9012'),
+('Niamh', 'Lawlor', '23 Main St, Bray, Ireland', 'niamh.lawlor@example.com', '+353 1 234 5678'),
+('Eoin', 'Gallagher', '1A O''Connell St, Limerick, Ireland', 'eoin.gallagher@example.com', '+353 61 456 7890'),
+('Kate', 'McLoughlin', '15 Shop St, Galway, Ireland', 'kate.mcloughlin@example.com', '+353 91 678 9012'),
+('Ciarán', 'Boland', '20 O''Connell St, Dublin 1, Ireland', 'ciaran.boland@example.com', '+353 1 890 1234'),
+('Ella', 'Murray', '30 Main St, Castlebar, Ireland', 'ella.murray@example.com', '+353 94 345 6789'),
+('Jack', 'Reilly', '6 O''Connell St, Waterford, Ireland', 'jack.reilly@example.com', '+353 51 567 8901'),
+('Emily', 'Nash', '12 William St, Limerick, Ireland', 'emily.nash@example.com', '+353 61 678 9012'),
+('Aaron', 'Clarke', '17 Patrick St, Cork, Ireland', 'aaron.clarke@example.com', '+353 21 789 0123'),
+('Sophia', 'Redmond', '9 Main St, Letterkenny, Ireland', 'sophia.redmond@example.com', '+353 74 234 5678'),
+('Callum', 'Lyons', '13 Grafton St, Dublin 2, Ireland', 'callum.lyons@example.com', '+353 1 901 2345'),
+('Chloe', 'Sweeney', '8 Patrick St, Kilkenny, Ireland', 'chloe.sweeney@example.com', '+353 56 678 9012'),
+('Shane', 'O’Rourke', '4 Main St, Athlone, Ireland', 'shane.orourke@example.com', '+353 90 567 8901'),
+('Ava', 'Curtin', '21 William St, Galway, Ireland', 'ava.curtin@example.com', '+353 91 789 0123');
+</sql><sql name="SQL 3">--DECLARE @poId INT;
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (1, '2022-02-25 09:14', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 20, 1, 149.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (2, '2022-02-27 13:30', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 5, 3, 38.97),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 21, 1, 19.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 14, 1, 14.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (1, '2022-03-05 09:14', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 20, 1, 149.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (3, '2022-03-25 21:57', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 22, 1, 129.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 24, 3, 44.97);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (5, '2022-04-01 13:06', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 15, 1, 199.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (6, '2022-04-03 11:25', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 18, 1, 29.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 6, 1, 129.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (7, '2022-04-05 10:15', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 7, 1, 49.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (6, '2022-04-10 12:39', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 1, 3, 89.97);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (8, '2022-04-11 17:43', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 2, 1, 149.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 23, 1, 99.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 10, 1, 29.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 3, 3, 19.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (9, '2022-04-11 21:03', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 2, 1, 149.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (10, '2022-04-12 12:03', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 5, 5, 64.95);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (11, '2022-04-15 18:31', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 12, 1, 119.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 9, 1, 19.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (12, '2022-04-20 12:11', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 19, 2, 49.98);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (13, '2022-04-25 08:19', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 4, 1, 39.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 8, 1, 24.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (14, '2022-04-26 21:01', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 13, 2, 19.98),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 24, 1, 14.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (15, '2022-05-05 17:53', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 5, 3, 38.97);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (16, '2022-05-06 20:47', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 5, 2, 25.98),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 14, 1, 14.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (18, '2022-05-09 12:20', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 9, 2, 39.98),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 12, 1, 119.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (19, '2022-05-11 21:02', 'Cancelled');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 20, 1, 149.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (20, '2022-05-15 15:32', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 15, 1, 199.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (22, '2022-05-16 07:11', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 20, 1, 149.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (23, '2022-05-20 10:57', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 5, 1, 12.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 9, 1, 19.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (23, '2022-05-25 16:23', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 5, 2, 25.98);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (10, '2022-05-27 15:11', 'Shipped');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 19, 3, 74.97),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 8, 2, 49.98);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (24, '2022-05-30 21:09', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 1, 3, 89.97);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (12, '2022-06-02 12:01', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 19, 1, 24.99),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 9, 2, 39.98);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (19, '2022-06-04 22:31', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 20, 1, 149.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status) 
+VALUES (25, '2022-06-10 20:30', 'Shipped');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 22, 1, 129.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status) 
+VALUES (15, '2022-06-15 15:15', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price)
+VALUES((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 9, 2, 39.98),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 19, 1, 24.99);
+
+INSERT INTO [PO] (supplier_id, po_date, po_status)
+VALUES (29, '2022-06-30 15:32', 'Delivered');
+--DECLARE @poId INT;
+INSERT INTO POItem (po_id, material_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 5, 2, 25.98),
+((SELECT seq from sqlite_sequence where name = &quot;PO&quot;), 14, 1, 14.99);</sql><sql name="SQL 4">SELECT *
+FROM Material;
+
+SELECT COUNT(*) AS number_of_different_materials
+FROM Material;</sql><sql name="SQL 5">SELECT name, description, stock
+FROM Material
+ORDER BY stock DESC;</sql><sql name="SQL 6">SELECT POItem.po_id, PO.po_date, PO.po_status
+FROM PO
+INNER JOIN POItem
+ON PO.id = POItem.id
+WHERE PO.po_status = &quot;Delivered&quot;
+ORDER BY PO.po_date DESC;
+</sql><sql name="SQL 7*">SELECT s.first_name, s.last_name, s.phone, SUM(POItem.quantity)
+FROM Supplier s
+LEFT JOIN POItem
+ON s.id = POItem.po_id
+GROUP BY s.first_name, s.last_name;</sql><sql name="SQL 8*">SELECT name, price
+FROM Material
+WHERE price &gt; 100
+ORDER BY price DESC;</sql><sql name="SQL 9*">CREATE VIEW TopFiveMaterialsByQuantityORDERED AS
+SELECT m.name, m.description, SUM(POItem.quantity) AS total_quantity_ordered
+FROM Material m
+LEFT JOIN POItem
+ON m.id = POItem.material_id
+GROUP BY m.name
+ORDER BY total_quantity_ordered DESC
+LIMIT 5;</sql><sql name="SQL 10*">SELECT m.id, m.name, m.description, m.stock, m.price
+FROM Material m
+LEFT JOIN POItem
+ON m.id = POItem.material_id
+WHERE quantity IS NULL;</sql><sql name="SQL 11*">DELETE FROM Supplier
+WHERE Supplier.id NOT IN (
+SELECT supplier_id
+FROM PO);</sql><sql name="SQL 12*">UPDATE Material AS m
+SET price = 19.99
+WHERE m.id = 7;</sql><sql name="SQL 13*">SELECT
+    strftime('%Y-%m', PO.po_date) AS year_month, --Note: The strftime() function is used to format a time, a date, or a datetime value based on a specified format.--
+    SUM(POItem.quantity) AS total_quantity
+FROM PO
+LEFT JOIN POItem ON PO.id = POItem.po_id
+GROUP BY strftime('%Y-%m', PO.po_date)
+ORDER BY year_month;
+</sql><current_tab id="12"/></tab_sql></sqlb_project>
