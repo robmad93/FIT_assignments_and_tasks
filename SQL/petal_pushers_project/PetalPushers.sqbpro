@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="PetalPushers.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1699"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Arrangement" custom_title="0" dock_id="1" table="4,11:mainArrangement"/><dock_state state="000000ff00000000fd00000001000000020000083b000004f6fc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000083b0000011f00ffffff0000083b0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Arrangement" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="98"/><column index="2" value="118"/><column index="3" value="70"/><column index="4" value="36"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Customer" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="77"/><column index="2" value="64"/><column index="3" value="93"/><column index="4" value="89"/><column index="5" value="89"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Flower" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="61"/><column index="2" value="81"/><column index="3" value="36"/><column index="4" value="36"/><column index="5" value="91"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Order" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="55"/><column index="2" value="77"/><column index="3" value="70"/><column index="4" value="69"/><column index="5" value="43"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Order_Item" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="87"/><column index="2" value="55"/><column index="3" value="65"/><column index="4" value="51"/><column index="5" value="55"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">-- Table 1: Customers
+CREATE TABLE Customers (
+    customer_id INTEGER PRIMARY KEY,
+    full_name TEXT NOT NULL,
+    phone TEXT,
+    email TEXT,
+    address TEXT
+)
+
+-- Table 2: Flowers
+CREATE TABLE Flowers (
+    flower_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    color TEXT,
+    price REAL NOT NULL,
+    stock_quantity INTEGER NOT NULL
+)
+
+-- Table 3: Arrangements
+CREATE TABLE Arrangements (
+    arrangement_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    description TEXT,
+    price REAL NOT NULL
+)
+
+-- Table 4: Orders
+CREATE TABLE Orders (
+    order_id INTEGER PRIMARY KEY,
+    customer_id INTEGER NOT NULL,
+    order_date TEXT NOT NULL,
+    total_price REAL NOT NULL,
+    status TEXT,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+)
+
+-- Table 5: Order_Items
+CREATE TABLE Order_Items (
+    order_item_id INTEGER PRIMARY KEY,
+    order_id INTEGER NOT NULL,
+    item_type TEXT NOT NULL,   -- 'Flower' or 'Arrangement'
+    item_id INTEGER NOT NULL,
+    quantity INTEGER NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id)
+);
+</sql><sql name="SQL 2">-- Table 1: Customer
+CREATE TABLE Customer (
+    customer_id INTEGER PRIMARY KEY,
+    full_name TEXT NOT NULL,
+    phone TEXT,
+    email TEXT,
+    address TEXT
+)</sql><sql name="SQL 3">-- Table 1: Customer
+CREATE TABLE Customer (
+    &quot;customer_id&quot; INTEGER PRIMARY KEY,
+    &quot;full_name&quot; nvarchar(50),
+    &quot;phone_number&quot; nvarchar(50),
+    &quot;email_address&quot; nvarchar(100),
+    &quot;home_address&quot; nvarchar(200)
+);
+
+-- Table 2: Flower
+CREATE TABLE Flower (
+    &quot;flower_id&quot; INTEGER PRIMARY KEY,
+    &quot;flower_name&quot; nvarchar(50),
+    &quot;color&quot; nvarchar(50),
+    &quot;price&quot; money,
+    &quot;stock_quantity&quot; INTEGER
+);
+
+-- Table 3: Arrangement
+CREATE TABLE Arrangement (
+    &quot;arrangement_id&quot; INTEGER PRIMARY KEY,
+    &quot;arrangement_name&quot; nvarchar(300),
+    &quot;description&quot; nvarchar(300),
+    &quot;price&quot; money
+);
+
+-- Table 4: Order
+CREATE TABLE &quot;Order&quot; (
+    &quot;order_id&quot; INTEGER PRIMARY KEY,
+    &quot;customer_id&quot; INTEGER,
+    &quot;order_date&quot; datetime,
+    &quot;total_price&quot; money,
+    &quot;status&quot; nvarchar(50)
+);
+
+-- Table 5: Order_Item
+CREATE TABLE Order_Item (
+    &quot;order_item_id&quot; INTEGER PRIMARY KEY,
+    &quot;order_id&quot; INTEGER,
+    &quot;item_type&quot; nvarchar(50),
+    &quot;item_id&quot; INTEGER,
+    &quot;quantity&quot; INTEGER
+);</sql><sql name="SQL 4">INSERT INTO Customer (customer_id, full_name, phone_number, email_address, home_address) VALUES
+(1, 'Aoife Murphy', '0871234567', 'aoife.murphy@email.ie', '12 Main Street, Galway'),
+(2, 'Seán O’Brien', '0862345678', 'sean.obrien@email.ie', '45 River Road, Cork'),
+(3, 'Niamh Kelly', '0853456789', 'niamh.kelly@email.ie', '78 Church Lane, Limerick'),
+(4, 'Conor Walsh', '0894567890', 'conor.walsh@email.ie', '23 Oak Park, Dublin'),
+(5, 'Siobhán Ryan', '0835678901', 'siobhan.ryan@email.ie', '9 Harbour View, Waterford'),
+(6, 'Patrick Byrne', '0876789012', 'patrick.byrne@email.ie', '56 Castle Avenue, Kilkenny'),
+(7, 'Laura Higgins', '0867890123', 'laura.higgins@email.ie', '14 Green Road, Sligo'),
+(8, 'Eoin Fitzgerald', '0858901234', 'eoin.fitzgerald@email.ie', '67 Market Street, Ennis'),
+(9, 'Clare Nolan', '0899012345', 'clare.nolan@email.ie', '3 Lake View, Mullingar'),
+(10, 'Darragh Collins', '0830123456', 'darragh.collins@email.ie', '88 Station Road, Wexford'),
+(11, 'Fiona McCarthy', '0871112233', 'fiona.mccarthy@email.ie', '21 College Park, Tralee'),
+(12, 'Tomás Brennan', '0862223344', 'tomas.brennan@email.ie', '6 Abbey Street, Navan'),
+(13, 'Aisling Doyle', '0853334455', 'aisling.doyle@email.ie', '90 Seaview, Bray'),
+(14, 'Ciarán O’Leary', '0894445566', 'ciaran.oleary@email.ie', '15 Hillcrest, Clonmel'),
+(15, 'Rachel Power', '0835556677', 'rachel.power@email.ie', '42 Brookfield, Carrigaline'),
+(16, 'Kevin Roche', '0876667788', 'kevin.roche@email.ie', '10 The Square, Skibbereen'),
+(17, 'Gráinne Flynn', '0867778899', 'grainne.flynn@email.ie', '5 Orchard Close, Athlone'),
+(18, 'Mark Healy', '0858889900', 'mark.healy@email.ie', '73 Pine Avenue, Portlaoise'),
+(19, 'Orla Kavanagh', '0899990011', 'orla.kavanagh@email.ie', '18 Riverside, Tullamore'),
+(20, 'Shane Murray', '0830001122', 'shane.murray@email.ie', '27 Meadow Park, Letterkenny');
+</sql><sql name="SQL 5">INSERT INTO Flower (flower_id, flower_name, color, price, stock_quantity) VALUES
+(1, 'Rose', 'Red', 3.50, 150),
+(2, 'Rose', 'White', 3.50, 120),
+(3, 'Tulip', 'Yellow', 2.50, 140),
+(4, 'Tulip', 'Pink', 2.50, 130),
+(5, 'Lily', 'White', 4.00, 100),
+(6, 'Lily', 'Orange', 4.20, 80),
+(7, 'Daffodil', 'Yellow', 2.00, 200),
+(8, 'Orchid', 'Purple', 6.50, 50),
+(9, 'Carnation', 'Pink', 2.80, 110),
+(10, 'Carnation', 'Red', 2.80, 90),
+(11, 'Gerbera', 'Orange', 3.20, 75),
+(12, 'Gerbera', 'Pink', 3.20, 85),
+(13, 'Sunflower', 'Yellow', 3.80, 60),
+(14, 'Peony', 'Pink', 5.50, 40),
+(15, 'Hydrangea', 'Blue', 4.75, 55),
+(16, 'Chrysanthemum', 'White', 3.00, 100),
+(17, 'Freesia', 'Purple', 3.60, 70),
+(18, 'Iris', 'Blue', 4.10, 65),
+(19, 'Lavender', 'Purple', 2.40, 90),
+(20, 'Anemone', 'Red', 4.30, 45);
+</sql><sql name="SQL 6">INSERT INTO Arrangement (arrangement_id, arrangement_name, description, price) VALUES
+(1, 'Classic Roses', 'Red rose bouquet', 32.00),
+(2, 'Spring Bloom', 'Bright seasonal flowers', 28.00),
+(3, 'White Elegance', 'White lilies and roses', 40.00),
+(4, 'Irish Garden', 'Seasonal Irish flowers', 30.00),
+(5, 'Luxury Orchid Mix', 'Premium orchids', 55.00),
+(6, 'Pastel Delight', 'Soft pastel colours', 26.00),
+(7, 'Sunshine Basket', 'Yellow themed flowers', 29.00),
+(8, 'Romantic Evening', 'Roses and lilies', 45.00),
+(9, 'Country Charm', 'Rustic wildflowers', 27.00),
+(10, 'Modern Chic', 'Minimalist floral design', 38.00),
+(11, 'Autumn Harvest', 'Warm autumn tones', 31.00),
+(12, 'Summer Meadow', 'Light summer flowers', 33.00),
+(13, 'Winter Whites', 'White winter arrangement', 36.00),
+(14, 'Pink Passion', 'Pink themed bouquet', 34.00),
+(15, 'Blue Skies', 'Blue and white flowers', 35.00),
+(16, 'Mother’s Day Special', 'Seasonal special bouquet', 42.00),
+(17, 'Birthday Surprise', 'Colourful mixed flowers', 29.00),
+(18, 'Sympathy Wreath', 'Elegant sympathy flowers', 60.00),
+(19, 'Anniversary Deluxe', 'Luxury romantic flowers', 65.00),
+(20, 'Thank You Bouquet', 'Simple thank-you flowers', 24.00);
+</sql><sql name="SQL 7">INSERT INTO &quot;Order&quot; (order_id, customer_id, order_date, total_price, status) VALUES
+(1, 1, '2025-03-01', 32.00, 'Delivered'),
+(2, 2, '2025-03-02', 28.00, 'Shipped'),
+(3, 3, '2025-03-03', 40.00, 'Delivered'),
+(4, 4, '2025-03-04', 30.00, 'Cancelled'),
+(5, 5, '2025-03-05', 55.00, 'Shipped'),
+(6, 6, '2025-03-06', 26.00, 'Delivered'),
+(7, 7, '2025-03-07', 29.00, 'Delivered'),
+(8, 8, '2025-03-08', 45.00, 'Cancelled'),
+(9, 9, '2025-03-09', 27.00, 'Delivered'),
+(10, 10, '2025-03-10', 38.00, 'Shipped'),
+(11, 11, '2025-03-11', 31.00, 'Delivered'),
+(12, 12, '2025-03-12', 33.00, 'Delivered'),
+(13, 13, '2025-03-13', 36.00, 'Shipped'),
+(14, 14, '2025-03-14', 34.00, 'Cancelled'),
+(15, 15, '2025-03-15', 35.00, 'Delivered'),
+(16, 16, '2025-03-16', 42.00, 'Delivered'),
+(17, 17, '2025-03-17', 29.00, 'Shipped'),
+(18, 18, '2025-03-18', 60.00, 'Delivered'),
+(19, 19, '2025-03-19', 65.00, 'Shipped'),
+(20, 20, '2025-03-20', 24.00, 'Delivered'),
+(21, 1, '2025-03-21', 33.00, 'Delivered'),
+(22, 3, '2025-03-22', 28.00, 'Cancelled');
+</sql><sql name="SQL 8">INSERT INTO Order_Item (order_item_id, order_id, item_type, item_id, quantity) VALUES
+(1, 1, 'Arrangement', 1, 1),
+(2, 2, 'Arrangement', 2, 1),
+(3, 3, 'Arrangement', 3, 1),
+(4, 4, 'Arrangement', 4, 1),
+(5, 5, 'Arrangement', 5, 1),
+(6, 6, 'Arrangement', 6, 1),
+(7, 7, 'Arrangement', 7, 1),
+(8, 8, 'Arrangement', 8, 1),
+(9, 9, 'Arrangement', 9, 1),
+(10, 10, 'Arrangement', 10, 1),
+(11, 11, 'Arrangement', 11, 1),
+(12, 12, 'Arrangement', 12, 1),
+(13, 13, 'Arrangement', 13, 1),
+(14, 14, 'Arrangement', 14, 1),
+(15, 15, 'Arrangement', 15, 1),
+(16, 16, 'Arrangement', 16, 1),
+(17, 17, 'Arrangement', 17, 1),
+(18, 18, 'Arrangement', 18, 1),
+(19, 19, 'Arrangement', 19, 1),
+(20, 20, 'Arrangement', 20, 1),
+(21, 1, 'Flower', 1, 6),
+(22, 2, 'Flower', 7, 10),
+(23, 3, 'Flower', 5, 4),
+(24, 5, 'Flower', 8, 2),
+(25, 10, 'Flower', 13, 3);
+</sql><current_tab id="2"/></tab_sql></sqlb_project>
