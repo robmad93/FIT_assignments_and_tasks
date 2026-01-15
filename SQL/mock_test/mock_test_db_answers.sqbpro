@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="mock_test_db.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1700"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="0" parent="2"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Product" custom_title="0" dock_id="1" table="4,7:mainProduct"/><dock_state state="000000ff00000000fd00000001000000020000083c000004f6fc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000083c0000011e00ffffff0000083c0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customer" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="29"/><column index="2" value="69"/><column index="3" value="93"/><column index="4" value="300"/><column index="5" value="241"/><column index="6" value="132"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Order" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="29"/><column index="2" value="77"/><column index="3" value="132"/><column index="4" value="79"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="OrderItem" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="29"/><column index="2" value="55"/><column index="3" value="69"/><column index="4" value="55"/><column index="5" value="208"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Product" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="29"/><column index="2" value="226"/><column index="3" value="300"/><column index="4" value="46"/><column index="5" value="38"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="TopFiveBestSellers" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="226"/><column index="2" value="300"/><column index="3" value="46"/><column index="4" value="88"/><column index="5" value="86"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Q1a">CREATE TABLE OrderItem (
+id INT,
+order_id INT,
+product_id INT,
+quantity INT,
+price REAL
+)</sql><sql name="Q1b">CREATE TABLE Product (
+id INTEGER,
+name TEXT,
+description TEXT,
+price REAL,
+stock INTEGER
+)</sql><sql name="Q1c">CREATE TABLE &quot;Order&quot; (
+id INTEGER,
+customer_id INTEGER,
+order_date DATETIME,
+order_status TEXT
+)</sql><sql name="Q1d">CREATE TABLE Customer (
+id INTEGER,
+first_name TEXT,
+last_name TEXT,
+address TEXT,
+email TEXT,
+phone TEXT
+)</sql><sql name="Q1e">INSERT INTO Customer (first_name, last_name, address, email, phone) VALUES
+('Niamh', 'Fitzmaurice', '82 Market Lane, Dublin 1, Ireland', 'niamh.fitzmaurice@example.org', '+353 87 328 3286'),
+('Conor', 'Higgins', '95 Market Lane, Galway, Ireland', 'conor.higgins@demo.ie', '+353 21 132 1488'),
+('Eimear', 'McDonnell', '12 College Road, Kilkenny, Ireland', 'eimear.mcdonnell@demo.ie', '+353 71 127 4257'),
+('Fionn', 'Keane', '92 Abbey Square, Ennis, Ireland', 'fionn.keane@testmail.ie', '+353 61 703 5557'),
+('Clodagh', 'O''Rourke', '1 Seaview Terrace, Ennis, Ireland', 'clodagh.orourke@example.org', '+353 89 259 4527'),
+('Darragh', 'Lynch', '98 The Crescent, Cork, Ireland', 'darragh.lynch@mockmail.ie', '+353 21 199 6881'),
+('Maeve', 'Kavanagh', '45 Riverside Walk, Wexford, Ireland', 'maeve.kavanagh@mockmail.ie', '+353 61 649 3045'),
+('Ronan', 'Moran', '49 Market Lane, Drogheda, Ireland', 'ronan.moran@demo.ie', '+353 91 691 4150'),
+('Caoimhe', 'Gallagher', '91 Market Lane, Dublin 4, Ireland', 'caoimhe.gallagher@testmail.ie', '+353 89 181 4814'),
+('Tadhg', 'Sweeney', '13 Oakfield Avenue, Wexford, Ireland', 'tadhg.sweeney@studentmail.ie', '+353 91 266 7065'),
+('Ciara', 'Power', '46 College Road, Wexford, Ireland', 'ciara.power@mockmail.ie', '+353 71 750 3803'),
+('Oisin', 'Daly', '69 Pearse Street, Kilkenny, Ireland', 'oisin.daly@testmail.ie', '+353 61 488 5422'),
+('Ava', 'Foley', '82 Pearse Street, Kilkenny, Ireland', 'ava.foley@example.org', '+353 83 334 1525'),
+('Liam', 'Quinn', '41 Oakfield Avenue, Wexford, Ireland', 'liam.quinn@mockmail.ie', '+353 87 680 6155'),
+('Saoirse', 'Harte', '28 Abbey Square, Clonmel, Ireland', 'saoirse.harte@studentmail.ie', '+353 61 246 5339'),
+('Cillian', 'Byrnes', '18 College Road, Wexford, Ireland', 'cillian.byrnes@demo.ie', '+353 21 697 7543'),
+('Oran', 'Moloney', '47 College Road, Limerick, Ireland', 'oran.moloney@demo.ie', '+353 61 193 1771'),
+('Grainne', 'Brennan', '15 Seaview Terrace, Waterford, Ireland', 'grainne.brennan@studentmail.ie', '+353 71 165 7304'),
+('Keelin', 'Nash', '49 Riverside Walk, Letterkenny, Ireland', 'keelin.nash@demo.ie', '+353 89 666 1188'),
+('Eoghan', 'Rooney', '88 Pearse Street, Cork, Ireland', 'eoghan.rooney@demo.ie', '+353 89 887 6573'),
+('Fia', 'Casey', '15 Bridge Street, Ennis, Ireland', 'fia.casey@testmail.ie', '+353 61 103 5315'),
+('Lorcan', 'Sheehan', '65 Seaview Terrace, Cork, Ireland', 'lorcan.sheehan@example.org', '+353 51 723 4258'),
+('Ailbhe', 'Conway', '20 The Crescent, Waterford, Ireland', 'ailbhe.conway@demo.ie', '+353 51 100 6310'),
+('Shane', 'Reilly', '63 Bishop Street, Cork, Ireland', 'shane.reilly@example.org', '+353 89 345 1949'),
+('Molly', 'O''Connor', '31 Riverside Walk, Galway, Ireland', 'molly.oconnor@mockmail.ie', '+353 61 935 2133'),
+('Padraig', 'McGrath', '98 Harbour Road, Limerick, Ireland', 'padraig.mcgrath@testmail.ie', '+353 61 662 3705'),
+('Elaine', 'Healy', '34 Harbour Road, Ennis, Ireland', 'elaine.healy@testmail.ie', '+353 51 873 4295'),
+('Kieran', 'Dowling', '92 Bridge Street, Naas, Ireland', 'kieran.dowling@example.org', '+353 61 629 8397'),
+('Aideen', 'Walsh', '16 College Road, Kilkenny, Ireland', 'aideen.walsh@mockmail.ie', '+353 91 121 4770'),
+('Declan', 'Ryan', '76 College Road, Dublin 1, Ireland', 'declan.ryan@mockmail.ie', '+353 83 334 2104');</sql><sql name="Q1f">INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (29, '2024-01-10 13:04', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 17, 2, 79.00);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (9, '2024-01-20 11:34', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 24, 4, 49.00),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 8, 4, 79.20),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 7, 4, 65.60);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (12, '2024-01-27 14:29', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 24, 4, 49.00);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (24, '2024-02-02 09:15', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 7, 2, 32.80),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 18, 4, 43.80);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (14, '2024-02-08 12:29', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 8, 4, 79.20);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (26, '2024-02-14 08:41', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 1, 2, 14.98),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 14, 4, 84.60);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (16, '2024-02-22 14:57', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 2, 2, 45.90);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (13, '2024-02-28 14:16', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 15, 4, 53.00);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (23, '2024-03-09 10:12', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 10, 2, 28.70),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 2, 3, 68.85),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 2, 4, 91.80),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 17, 2, 79.00);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (2, '2024-03-13 10:04', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 20, 2, 31.50);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (13, '2024-03-20 17:15', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 19, 1, 17.60);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (20, '2024-03-27 14:42', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 19, 3, 52.80),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 7, 3, 49.20);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (8, '2024-04-05 14:08', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 22, 3, 20.97);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (15, '2024-04-12 09:00', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 15, 2, 26.50),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 17, 3, 118.50);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (5, '2024-04-19 09:56', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 8, 3, 59.40),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 10, 2, 28.70);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (27, '2024-04-26 17:51', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 21, 1, 26.80);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (22, '2024-05-03 18:06', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 9, 1, 12.60),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 4, 2, 37.00);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (9, '2024-05-10 17:13', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 23, 3, 100.35),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 7, 3, 49.20);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (17, '2024-05-18 12:57', 'Delivered');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 2, 4, 91.80);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (27, '2024-05-24 08:00', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 11, 2, 17.80);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (21, '2024-05-31 10:47', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 15, 4, 53.00);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (18, '2024-06-05 09:04', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 23, 2, 66.90),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 18, 3, 32.85);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (19, '2024-06-13 14:08', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 2, 3, 68.85);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (12, '2024-06-19 13:13', 'Cancelled');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 22, 2, 13.98),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 22, 1, 6.99);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (12, '2024-06-29 17:47', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 5, 2, 59.50);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (28, '2024-07-04 10:56', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 14, 2, 42.30),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 24, 3, 36.75);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (26, '2024-07-13 18:55', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 24, 2, 24.50);
+
+INSERT INTO [Order] (customer_id, order_date, order_status) 
+VALUES (9, '2024-07-18 09:24', 'Cancelled');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 2, 4, 91.80);
+
+INSERT INTO [Order] (customer_id, order_date, order_status) 
+VALUES (8, '2024-07-25 15:22', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price)
+VALUES((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 10, 1, 14.35),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 22, 2, 13.98);
+
+INSERT INTO [Order] (customer_id, order_date, order_status)
+VALUES (13, '2024-08-02 12:55', 'Shipped');
+-- SET @orderId = SCOPE_IDENTITY();
+INSERT INTO OrderItem (order_id, product_id, quantity, price) 
+VALUES ((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 3, 3, 29.97),
+((SELECT seq from sqlite_sequence where name = &quot;Order&quot;), 12, 4, 109.20);</sql><sql name="Q1g">INSERT INTO Product (name, description, price, stock) VALUES
+('Compostable Phone Grip', 'Biodegradable grip accessory for smartphones with secure hold', 7.49, 120),
+('Merino Wool Beanie', 'Warm knitted beanie made with soft merino wool blend', 22.95, 60),
+('USB-C Fast Charge Cable', 'Durable braided USB-C cable supporting fast charging and data', 9.99, 240),
+('Ceramic Pour-Over Dripper', 'Stoneware dripper for consistent pour-over coffee brewing', 18.50, 80),
+('Insulated Lunch Box', 'Leak-proof lunch box with thermal lining for hot or cold meals', 29.75, 90),
+('Ergonomic Mouse Pad', 'Gel wrist support mouse pad for comfortable desk work', 11.20, 150),
+('Refillable Fountain Pen', 'Metal-bodied pen with converter for bottled ink refills', 16.40, 110),
+('Plant-Based Protein Bar Pack', 'Assorted protein bars made from plant ingredients, box of 12', 19.80, 200),
+('Noise-Reducing Earplugs', 'Reusable silicone earplugs designed to reduce ambient noise', 12.60, 170),
+('Compact First Aid Kit', 'Pocket-sized first aid kit with essentials for minor injuries', 14.35, 140),
+('Microfibre Cleaning Cloths', 'Lint-free cloth set for screens, glass, and stainless surfaces', 8.90, 300),
+('Adjustable Laptop Stand', 'Aluminum stand with height and angle adjustment for laptops', 27.30, 75),
+('Glass Meal Prep Containers', 'Set of 3 airtight glass containers for meal prep and storage', 34.99, 65),
+('Rechargeable Bike Light', 'USB rechargeable front bike light with multiple brightness modes', 21.15, 95),
+('Stainless Steel Straw Set', 'Set of 8 steel straws with cleaning brushes and pouch', 13.25, 180),
+('Travel Packing Cubes', 'Set of 6 packing cubes to organize luggage efficiently', 24.40, 85),
+('Cast-Iron Skillet 10in', 'Pre-seasoned cast-iron skillet for stove and oven cooking', 39.50, 40),
+('Natural Deodorant Stick', 'Aluminum-free deodorant with natural botanical fragrance', 10.95, 160),
+('E-reader Sleeve Case', 'Padded sleeve to protect e-readers during travel', 17.60, 105),
+('Herbal Tea Sampler', 'Selection of caffeine-free herbal teas, 20 sachets', 15.75, 130),
+('Magnetic Whiteboard Set', 'Dry-erase whiteboard with magnets, markers, and eraser', 26.80, 70),
+('Weatherproof Notebook', 'Water-resistant notebook for outdoor notes and fieldwork', 6.99, 220),
+('Cordless Mini Vacuum', 'Handheld cordless vacuum for quick car and desk cleanups', 33.45, 55),
+('Yoga Cork Block', 'High-density cork yoga block for stability in poses', 12.25, 190);</sql><sql name="Q2">SELECT COUNT(*) AS &quot;number_of_registered_customers&quot;
+FROM Customer;</sql><sql name="Q3">SELECT name, price, stock
+FROM Product
+WHERE stock &lt; 80
+ORDER BY stock;</sql><sql name="Q4">SELECT id, order_date, order_status
+FROM &quot;Order&quot;
+WHERE order_status = &quot;Delivered&quot;
+ORDER BY order_date;</sql><sql name="Q5">-- SELECT c.first_name, c.last_name, c.phone, c.email, SUM(oi.price) AS total_amount_spent
+-- FROM Customer AS c
+-- JOIN OrderItem AS oi
+-- ON c.id = oi.id
+-- GROUP BY oi.order_id
+-- ORDER BY total_amount_spent DESC;
+
+SELECT c.first_name, c.last_name, c.phone, c.email, SUM(oi.price) AS total_spent FROM Customer c
+JOIN &quot;Order&quot; o ON o.customer_id = c.id
+JOIN OrderItem oi ON oi.order_id = o.id
+GROUP BY c.id
+ORDER BY total_spent DESC;</sql><sql name="Q6">SELECT *
+FROM Product;
+
+SELECT name, price
+FROM Product
+WHERE price BETWEEN 10.00 AND 20.00
+ORDER BY price DESC;</sql><sql name="Q7">CREATE VIEW [TopFiveBestSellers] AS
+SELECT p.name, p.description, p.price, SUM(oi.quantity) AS total_quantity, SUM(oi.price) AS total_revenue
+FROM Product As p
+INNER JOIN OrderItem As oi
+ON oi.product_id = p.id
+GROUP BY p.name
+ORDER BY total_quantity DESC
+LIMIT 5;</sql><sql name="Q8">SELECT c.id, c.first_name, c.last_name, COUNT(DISTINCT o.id) AS total_orders FROM Customer As c
+JOIN &quot;Order&quot; AS o
+ON c.id = o.customer_id
+JOIN OrderItem AS oi
+ON o.id = oi.order_id
+GROUP BYc.id, c.first_name, c.last_name
+HAVING COUNT(DISTINCT o.id) &gt;= 2
+ORDER BY total_orders DESC;</sql><sql name="Q9">SELECT *
+FROM Product;
+
+SELECT *
+FROM OrderItem;
+
+SELECT p.id, p.name, p.description, p.price, p.stock
+FROM Product As p
+LEFT JOIN OrderItem
+ON p.id = OrderItem.product_id
+WHERE OrderItem.id IS NULL;</sql><sql name="Q10">DELETE FROM OrderItem
+WHERE order_id IN (
+    SELECT id
+    FROM &quot;Order&quot;
+    WHERE order_status = 'Delivered'
+);
+
+DELETE FROM &quot;Order&quot;
+WHERE order_status = 'Delivered';</sql><sql name="Q11">UPDATE Product
+SET price = &quot;29.95&quot;
+WHERE name = &quot;Cordless Mini Vacuum&quot;;</sql><sql name="Q12">SELECT
+    strftime('%Y-%m', o.order_date) AS order_month,
+    SUM(oi.quantity) AS units_sold,
+    SUM(oi.quantity * oi.price) AS total_revenue
+FROM &quot;Order&quot; AS o
+JOIN OrderItem AS oi
+    ON o.id = oi.order_id
+GROUP BY
+    strftime('%Y-%m', o.order_date)
+ORDER BY
+    order_month ASC;</sql><current_tab id="6"/></tab_sql></sqlb_project>
